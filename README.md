@@ -83,13 +83,21 @@ pip install streamlit
 Ensure your folder looks like this:
 
 ```
-NLP-Learning-Dashboard/
-├── streamlit_app.py
-├── styles.css
+project/
 ├── pages/
-│   ├── 1_Word2Vec.py
-│   └── 2_POS_Tagging.py
-└── README.md
+│   ├── 1_Word2Vec.py                   # Educational content (read-only)
+│   ├── 2_pos_tagging.py              # Interactive tagging interface
+│   ├── 3_user_POS_Tagging.py
+│   └── 4_HMM_&_Viterbi_Algo.py           # HMM & Viterbi visualization
+├── mathematical_calculation.py             # Core calculations module
+├── streamlit_app.py                          # Main home page
+├── styles.css                              # Custom styling
+├── images/
+│   ├── image_1.png
+│   ├── image_2.png
+│   ├── image_3.png                         
+│   └── image_4.png                         
+└── README.md                               
 ```
 
 ---
