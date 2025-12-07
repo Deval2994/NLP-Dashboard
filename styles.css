@@ -1,0 +1,387 @@
+/* Import Modern Fonts */
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Background */
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f4c75 100%);
+    min-height: 100vh;
+}
+
+/* Title Styling */
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    background: linear-gradient(120deg, #00d4ff, #7c3aed, #ff006e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem !important;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #e0f2fe;
+    letter-spacing: -1px;
+}
+
+/* Text Styling */
+p, .stMarkdown {
+    color: #cbd5e1;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    display: inline-block;
+    padding: 16px 28px;
+    margin: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 2px solid transparent;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+}
+
+/* Card Styling */
+.card {
+    background: rgba(15, 23, 42, 0.8);
+    border: 2px solid rgba(0, 212, 255, 0.2);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 24px 0;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    border-color: rgba(0, 212, 255, 0.6);
+    box-shadow: 0 30px 80px rgba(0, 212, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00d4ff;
+    margin-bottom: 12px;
+}
+
+.card-text {
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.stButton > button {
+    background: linear-gradient(135deg, #00d4ff, #7c3aed);
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 212, 255, 0.2);
+    width: 100%;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.4);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+.hero-text {
+    font-family: 'Space Mono', monospace;
+    color: #00d4ff;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 0.2s backwards;
+    font-weight: 500;
+}
+
+/* Word2Vec Styles */
+.concept-box {
+    background: rgba(124, 58, 237, 0.1);
+    border-left: 5px solid #7c3aed;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.concept-box:hover {
+    background: rgba(124, 58, 237, 0.2);
+    transform: translateX(5px);
+}
+
+.concept-title {
+    font-family: 'Space Mono', monospace;
+    color: #ff006e;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.comparison-box {
+    background: rgba(0, 212, 255, 0.08);
+    border: 2px solid rgba(0, 212, 255, 0.3);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.comparison-box:hover {
+    border-color: rgba(0, 212, 255, 0.8);
+    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.15);
+}
+
+.comparison-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #00d4ff;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    background: linear-gradient(120deg, rgba(0, 212, 255, 0.3), rgba(124, 58, 237, 0.3));
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #00d4ff;
+    font-weight: 600;
+}
+
+.example-box {
+    background: rgba(15, 23, 42, 0.9);
+    border: 2px dashed rgba(255, 0, 110, 0.4);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    font-family: 'Space Mono', monospace;
+    color: #ff006e;
+    font-weight: 500;
+}
+
+
+/* Image Section Styling */
+.image-container {
+    background: rgba(0, 212, 255, 0.05);
+    border: 2px solid rgba(0, 212, 255, 0.3);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.image-container:hover {
+    border-color: rgba(0, 212, 255, 0.6);
+    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.15);
+}
+
+.image-caption {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #00d4ff;
+    text-align: center;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 2px solid rgba(0, 212, 255, 0.2);
+}
+
+.image-description {
+    font-size: 0.95rem;
+    color: #a1a8b8;
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.image-wrapper img {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+
+/* POS Tagging Interactive Section Styles */
+
+.pos-input-container {
+    margin: 20px 0;
+    font-family: 'Space Mono', monospace;
+}
+
+.pos-input-field {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ffa300;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.pos-input-field:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
+}
+
+.pos-input-field::placeholder {
+    color: #888;
+}
+
+.pos-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #0f0f0f;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.pos-word-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.pos-word {
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    min-width: 100px;
+    transition: all 0.3s ease;
+    color: #fff;
+    background-color: #333;
+}
+
+.pos-word.noun {
+    background-color: #2ecc71;
+    color: #000;
+}
+
+.pos-word.verb {
+    background-color: #ffa300;
+    color: #000;
+}
+
+.pos-word.modal {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.pos-dropdown {
+    padding: 8px 12px;
+    border: 1px solid #ffa300;
+    border-radius: 6px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    min-width: 100px;
+}
+
+.pos-dropdown:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 8px rgba(255, 107, 53, 0.2);
+}
+
+.pos-dropdown option {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.empty-state {
+    text-align: center;
+    color: #888;
+    padding: 30px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.submit-btn-style {
+    padding: 10px 25px;
+    background-color: #ffa300;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn-style:hover {
+    background-color: #ff6b35;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+}
